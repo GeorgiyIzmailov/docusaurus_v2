@@ -10,6 +10,19 @@ const config = {
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
+  scripts: [
+    {
+      src: 'https://unpkg.com/@inkeep/widgets-embed@latest/dist/embed.js',
+      type: 'module',
+      defer: true,
+    },
+    {
+      src: 'js/addInkeep.js',
+      type: 'module',
+      defer: true,
+    }
+  ],
+
   // Set the production url of your site here
   url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
